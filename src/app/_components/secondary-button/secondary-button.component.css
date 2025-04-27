@@ -1,0 +1,21 @@
+.custom-button{
+  height: 40px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  background:  #1A2856;
+  cursor: pointer;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-button:hover{
+  opacity: 90%;
+}
+
+.custom-button i{
+  font-size: 20px;
+}
