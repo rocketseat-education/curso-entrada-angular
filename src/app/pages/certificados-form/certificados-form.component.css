@@ -26,3 +26,44 @@ label {
   letter-spacing: 0;
   color: #1a2856;
 }
+
+.item-list {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  gap: 12px;
+}
+
+.item-list hr {
+  all: unset;
+  display: block;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 12px 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn i {
+  padding: 5.75px;
+  color: #e95f5f;
+  font-size: 12.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn i:hover {
+  background-color: #e2e8f0;
+}
+
+.custom-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  height: 40px;
+}

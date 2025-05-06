@@ -1,20 +1,26 @@
 <div class="d-flex flex-column align-items-center">
   <div class="content-titles">
-    <h1 class="fw-bold custom-title">Certificados gerados</h1>
-    <p class="mb-4 custom-subtitle">Visualize todos os certificados gerados</p>
+    <h1 class="fw-bold custom-title">Geração de certificado</h1>
+    <p class="mb-4 custom-subtitle">
+      Preencha os dados para gerar um novo certificado
+    </p>
   </div>
   <div class="custom-card w-100">
     <h2 class="card-title">Novo certificado</h2>
     <div class="mb-3">
       <label class="form-label">Nome</label>
-      <input type="text" class="form-control" placeholder="Nome do aluno" />
+      <input
+        type="text"
+        class="form-control custom-input"
+        placeholder="Nome do aluno"
+      />
     </div>
     <div class="mb-3 d-flex align-items-end">
       <div class="flex-grow-1 me-2">
         <label class="form-label">Atividade</label>
         <input
           type="text"
-          class="form-control"
+          class="form-control custom-input"
           placeholder="Atividade exercida"
         />
       </div>
@@ -22,7 +28,35 @@
     </div>
     <div class="atividade-group">
       <label class="form-label">Lista de atividades</label>
-      <div class="custom-card w-100"></div>
+      <div class="item-list w-100">
+        <div class="item">
+          <span class="item-text">Configuração com Angular CLI</span>
+          <div class="remove-btn">
+            <i class="ph-bold ph-x"></i>
+          </div>
+        </div>
+        <hr />
+        <div class="item">
+          <span class="item-text">Configuração com Angular CLI</span>
+          <div class="remove-btn">
+            <i class="ph-bold ph-x"></i>
+          </div>
+        </div>
+        <hr />
+        <div class="item">
+          <span class="item-text">Configuração com Angular CLI</span>
+          <div class="remove-btn">
+            <i class="ph-bold ph-x"></i>
+          </div>
+        </div>
+        <hr />
+        <div class="item">
+          <span class="item-text">Configuração com Angular CLI</span>
+          <div class="remove-btn">
+            <i class="ph-bold ph-x"></i>
+          </div>
+        </div>
+      </div>
     </div>
     <app-primary-button></app-primary-button>
   </div>
