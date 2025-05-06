@@ -7,21 +7,23 @@
   </div>
   <div class="custom-card w-100">
     <h2 class="card-title">Novo certificado</h2>
-    <div class="mb-3">
-      <label class="form-label">Nome</label>
+    <div class="mb-3 custom-input-group">
+      <label for="nome" class="form-label">Nome</label>
       <input
+        id="nome"
         type="text"
         class="form-control custom-input"
         placeholder="Nome do aluno"
       />
     </div>
-    <div class="mb-3 d-flex align-items-end">
+    <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
-        <label class="form-label">Atividade</label>
+        <label for="atividade" class="form-label">Atividade</label>
         <input
           type="text"
           class="form-control custom-input"
           placeholder="Atividade exercida"
+          id="atividade"
         />
       </div>
       <app-secondary-button></app-secondary-button>
