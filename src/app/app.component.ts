@@ -5,6 +5,7 @@ import { ItemCertificadoComponent } from './_components/item-certificado/item-ce
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { PrimaryButtonComponent } from './_components/primary-button/primary-button.component';
 import { SecondaryButtonComponent } from './_components/secondary-button/secondary-button.component';
+import { CertificadosFormComponent } from './pages/certificados-form/certificados-form.component';
 import { CertificadosComponent } from './pages/certificados/certificados.component';
 
 @Component({
@@ -17,6 +18,7 @@ import { CertificadosComponent } from './pages/certificados/certificados.compone
     ItemCertificadoComponent,
     BaseUiComponent,
     CertificadosComponent,
+    CertificadosFormComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

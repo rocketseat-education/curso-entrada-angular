@@ -1,0 +1,28 @@
+.custom-card {
+  max-width: 672px;
+  gap: 32px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 32px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #1a2856;
+  margin-bottom: 20px;
+}
+
+.atividade-group {
+  margin-bottom: 32px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #1a2856;
+}
