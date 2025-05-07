@@ -8,6 +8,7 @@
   color: #fff;
   background: linear-gradient(90deg, #1a2856 0%, #334ea9 100%);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .custom-button:hover {

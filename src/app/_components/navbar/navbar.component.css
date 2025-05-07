@@ -1,16 +1,32 @@
-.navbar{
+.navbar {
   background-color: #fff;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #E2E8F0
+  border-bottom: 1px solid #e2e8f0;
+  padding-right: 28px;
+  padding-left: 12px;
 }
 
-.navbar-logo img{
+.navbar-logo img {
   height: 40px;
 }
-.active{
-  color: #3B5AC2;
+.active {
+  color: #3b5ac2;
 }
 
-.nav-link.active{
-  color: #3B5AC2;
+.nav-link {
+  padding: 6px !important;
+}
+
+.nav-link.active {
+  color: #3b5ac2;
+  font-weight: 600;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin-left: 18px !important;
+}
+
+.nav-item i {
+  font-size: 20px;
 }
