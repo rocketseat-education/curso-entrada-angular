@@ -1,11 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 import { PrimaryButtonComponent } from '../../_components/primary-button/primary-button.component';
 import { SecondaryButtonComponent } from '../../_components/secondary-button/secondary-button.component';
 
 @Component({
   selector: 'app-certificados-form',
-  imports: [PrimaryButtonComponent, SecondaryButtonComponent, FormsModule],
+  imports: [
+    PrimaryButtonComponent,
+    SecondaryButtonComponent,
+    FormsModule,
+    CommonModule,
+  ],
   templateUrl: './certificados-form.component.html',
   styleUrl: './certificados-form.component.css',
 })
@@ -13,4 +19,8 @@ export class CertificadosFormComponent {
   nome: string = '';
   atividade: string = '';
   atividades: string[] = ['Angular', 'React', 'Vue'];
+
+  campoInvalido(control: NgModel) {
+    return control.invalid && control.touched;
+  }
 }
