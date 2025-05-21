@@ -10,6 +10,7 @@
     <div class="custom-input-group">
       <label for="nome" class="form-label">Nome</label>
       <input
+        [(ngModel)]="nome"
         id="nome"
         type="text"
         class="form-control custom-input"
@@ -24,6 +25,7 @@
       <div class="flex-grow-1 me-2">
         <label for="atividade" class="form-label">Atividade</label>
         <input
+          [(ngModel)]="atividade"
           type="text"
           class="form-control custom-input"
           placeholder="Atividade exercida"
@@ -35,33 +37,16 @@
     <div class="atividade-group">
       <label class="form-label">Lista de atividades</label>
       <div class="item-list w-100">
+        @for (atividade of atividades; track $index) {
         <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
+          <span class="item-text">{{ atividade }}</span>
           <div class="remove-btn">
             <i class="ph-bold ph-x"></i>
           </div>
         </div>
+        @if ($index +1 != atividades.length) {
         <hr />
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
-          </div>
-        </div>
-        <hr />
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
-          </div>
-        </div>
-        <hr />
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
-          </div>
-        </div>
+        } }
       </div>
     </div>
     <app-primary-button></app-primary-button>
