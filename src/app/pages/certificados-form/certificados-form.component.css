@@ -74,7 +74,7 @@ label {
 }
 
 .custom-input-group {
-  margin-bottom: 20px !important;
+  margin-bottom: 20px;
 }
 
 .custom-input-group:has(input:focus) label {
