@@ -15,7 +15,7 @@
         >Nome</label
       >
       <input
-        [(ngModel)]="nome"
+        [(ngModel)]="certificado.nome"
         #nomeRef="ngModel"
         name="nome"
         maxlength="150"
@@ -57,19 +57,20 @@
     <div class="atividade-group">
       <label class="form-label">Lista de atividades</label>
       <div class="item-list w-100">
-        @for (atividade of atividades; track $index) {
+        @for (atividade of certificado.atividades; track $index) {
         <div class="item">
           <span class="item-text">{{ atividade }}</span>
           <div (click)="excluirAtividade($index)" class="remove-btn">
             <i class="ph-bold ph-x"></i>
           </div>
         </div>
-        @if ($index +1 != atividades.length) {
+        @if ($index +1 != certificado.atividades.length) {
         <hr />
         } }
       </div>
     </div>
     <app-primary-button
+      (click)="submit()"
       [disabled]="!formValido()"
       textoBotao="Gerar certificado"
     ></app-primary-button>
