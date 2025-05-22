@@ -34,12 +34,7 @@
     </div>
     <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
-        <label
-          [ngClass]="{ 'text-danger-label': campoInvalido(atividadeRef) }"
-          for="atividade"
-          class="form-label"
-          >Atividade</label
-        >
+        <label for="atividade" class="form-label">Atividade</label>
         <input
           [(ngModel)]="atividade"
           #atividadeRef="ngModel"
@@ -51,18 +46,11 @@
           class="form-control custom-input"
           placeholder="Atividade exercida"
         />
-
-        @if(campoInvalido(atividadeRef) ) {
-        <div class="error-message d-flex align-items-center">
-          <i class="ph ph-warning-circle"></i>
-          <p class="m-0">O nome da atividade é obrigatório</p>
-        </div>
-        }
       </div>
       <app-secondary-button
-        [ngStyle]="
-          campoInvalido(atividadeRef) ? { 'margin-bottom': '24px' } : {}
-        "
+        [disabled]="atividade.length == 0"
+        textoBotao="Adicionar"
+        phClass="ph ph-plus"
       ></app-secondary-button>
     </div>
     <div class="atividade-group">
@@ -80,6 +68,9 @@
         } }
       </div>
     </div>
-    <app-primary-button></app-primary-button>
+    <app-primary-button
+      [disabled]="!formValido()"
+      textoBotao="Gerar certificado"
+    ></app-primary-button>
   </div>
 </form>
