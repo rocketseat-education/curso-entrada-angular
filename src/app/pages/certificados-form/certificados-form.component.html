@@ -49,7 +49,7 @@
       </div>
       <app-secondary-button
         (click)="adicionarAtividade()"
-        [disabled]="atividade.length == 0"
+        [disabled]="!atividade || atividade.length == 0"
         textoBotao="Adicionar"
         phClass="ph ph-plus"
       ></app-secondary-button>
